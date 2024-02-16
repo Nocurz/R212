@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: red;
+    border: 2px solid yellow;
+}
+
+body {
+    background-color: #555AC6;
+
+}
+
+h1 {
+    color: #FFF;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.largeur {
+    width: 80%;
+   margin: 0 auto;
+   margin-bottom: 20px;
+}
+
+.gris {
+    background-color: grey;
+    width: 100%;
+    border-radius: 8px;
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+.graph1 {
+    width: 43%;
+    background-color: grey;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.graph2 {
+    width: 43%;
+    background-color: grey;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.graph12 {
+    width: 100%;
+}
+
+.biblio {
+    background-color: grey;
+    width: 80%;
+    height: 90px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.top {
+    background-color: grey;
+    width: 80%;
+    height: 90px;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.carte {
+    width: 23%;
+    background-color: grey;
+    height: 75px;
+    border-radius: 8px;
+}
+.carte1 {
+    width: 23%;
+    background-color: grey;
+    height: 75px;
+    border-radius: 8px;
+}
+.carte2 {
+    width: 23%;
+    background-color: grey;
+    height: 75px;
+    border-radius: 8px;
+}
+.carte3 {
+    width: 23%;
+    background-color: grey;
+    height: 75px;
+    border-radius: 8px;
+}
+
+.allgrid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conçu {
+    color: #FFF;
+}
+
+.titre {
+    width: 100%;
+    margin-bottom: 20px;
+}
