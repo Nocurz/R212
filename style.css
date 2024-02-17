@@ -187,3 +187,9 @@ h1 {
     text-align: center;
 
 }
+
+#carousel1 {
+     width: 100%;
+     margin: 0 auto;
+     height: 120px;
+}
