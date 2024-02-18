@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: red;
-    border: 2px solid yellow;
+    /* background-color: red;
+    border: 2px solid yellow; */
 }
 
 body {
-    background: linear-gradient(#555AC6,#5357B0);
+    background: linear-gradient(#555AC6,#5e63c6);
 
 }
 
@@ -28,7 +28,7 @@ h1 {
     background-color: grey;
     width: 100%;
     border-radius: 8px;
-    height: 220px;
+    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -191,5 +191,44 @@ h1 {
 #carousel1 {
      width: 100%;
      margin: 0 auto;
-     height: 120px;
+     height: 220px;
+     border-radius: 8px;
+}
+
+.img1 {
+    width: 400px;
+    justify-content: center;
+    height: 300px;
+    border-radius: 8px;
+}
+.img2 {
+    width: 400px;
+    justify-content: center;
+    height: 300px;
+    border-radius: 8px;
+}
+.img3 {
+    width: 400px;
+    justify-content: center;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    height: 300px;
+}
+
+.carousel-control-next {
+    position: absolute;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+}
+
+.chart {
+    z-index: 1;
+    margin: 0 auto;
 }
