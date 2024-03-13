@@ -17,7 +17,7 @@
     ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body style="min-width: 430px;">
     <h1>Armora</h1>
     <div
       class="d-flex justify-content-center align-items-center flex-column largeur">
@@ -54,21 +54,28 @@
 
       <div class="d-flex justify-content-between graph12">
         <div class="d-flex graph1">graph1
-          <div class="chart">
-            <canvas id="barchart" width="150'" height="150"></canvas>
+          <div>
+            <canvas id="myChart" width="300" height="300"></canvas>
           </div>
-          <div class="chart">
-            <canvas id="doughnut" width="300" height="300"></canvas>
-          </div>
+       
         </div>
 
         <div class="d-flex graph2">graph2</div>
       </div>
     </div>
 
-    <div class="d-flex justify-content-center align-items-center biblio">
-      bibliothèque
-    </div>
+    <div class="d-flex justify-content-between flex-row column-gap biblio">
+      <!-- <div class="bibliobox"> -->
+        <div class="bibli-box">
+        </div>
+        <div class="bibli-box1">
+        </div>
+        <div class="bibli-box2">
+        </div>
+        <div class="bibli-box3">
+        </div>
+      </div>
+    <!-- </div> -->
 
     <div class="d-flex justify-content-center align-items-center top">
       Top 5
@@ -131,7 +138,7 @@
 
       <script src="graph1.js"></script>
       <script src="graph2.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src="script.js"></script>
     </div>
   </body>

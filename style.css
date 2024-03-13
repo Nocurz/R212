@@ -25,7 +25,7 @@ h1 {
 }
 
 .gris {
-    background-color: grey;
+    /* background-color: grey; */
     width: 100%;
     border-radius: 8px;
     height: 300px;
@@ -35,14 +35,14 @@ h1 {
 .graph1 {
     width: 48%;
     background-color: grey;
-    height: 150px;
+    height: 175px;
     border-radius: 8px;
 }
 
 .graph2 {
     width: 48%;
     background-color: grey;
-    height: 150px;
+    height: 175px;
     border-radius: 8px;
 }
 
@@ -53,7 +53,7 @@ h1 {
 .biblio {
     background-color: grey;
     width: 90%;
-    height: 150px;
+    height: 250px;
     border-radius: 8px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -228,7 +228,23 @@ h1 {
     display: flex;
 }
 
-.chart {
-    z-index: 1;
-    margin: 0 auto;
+.bibli-box {
+    width: 23%;
+    background-color: red;
+    height: 90px;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding-top: 0px;
 }
+
+.bibli-box1 {
+    width: 23%;
+    background-color: red;
+    height: 90px;
+    border-radius: 8px;
+    margin-top: 80px;
+    padding-top: 0 auto;
+}
+
+
+
