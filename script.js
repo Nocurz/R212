@@ -1,10 +1,9 @@
 $(document).ready(function() {
   var jsonFile = 'data.json';
+  var audioObjects = []; // Array to store references to Audio objects
 
-  // Function to fetch JSON data
   function fetchData() {
     $.getJSON(jsonFile, function(data) {
-      // Iterate through JSON data and create Bootstrap cards
       $.each(data, function(index, item) {
         var cardHTML = `
           <div class="col-md-4 mb-4 col-lg-3">
@@ -26,24 +25,48 @@ $(document).ready(function() {
             </div>
           </div>
         `;
-        // Append the card HTML to the card container
         $('#card-container').append(cardHTML);
+      });
+      
+      $('.read-btn').on('click', function() {
+        var audioUrl = $(this).data('audio');
+        var isPlaying = $(this).data('playing');
+        
+        $('.read-btn').each(function() {
+          $(this).html('Play');
+          $(this).data('playing', false);
+        });
+
+        if (isPlaying) {
+          $(this).html('Play');
+          $(this).data('playing', false);
+          stopAllAudio();
+        } else {
+          $(this).html('Pause');
+          $(this).data('playing', true);
+          playAudio(audioUrl);
+        }
       });
     });
   }
 
-  // Call fetchData function to load JSON data and create cards
-  fetchData();
-
-  function playMusic(audioPath) {
-      var audio = new Audio(audioPath);
-      audio.play();
+  function stopAllAudio() {
+    audioObjects.forEach(function(audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    });
   }
 
-  
-
+  function playAudio(audioUrl) {
+    var audio = new Audio(audioUrl);
+    audioObjects.push(audio); // Ajouter l'objet Audio au tableau
+    audio.play();
+    audio.onended = function() {
+      $('.read-btn').each(function() {
+        $(this).html('Play');
+        $(this).data('playing', false);
+      });
+    };
+  }
+  fetchData();
 });
-
-
-
-
